@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>gulp-scss-starter</title>
+  <title>implate</title>
   <meta name="theme-color" content="#fff">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport"
@@ -30,6 +30,12 @@
 
 <body>
   @@include("../blocks/modules/header/header.html")
+  <main>
+    @@include("../blocks/modules/preview/preview.html")
+    @@include("../blocks/modules/about/about.html")
+    @@include("../blocks/modules/portfolio/portfolio.html")
+    @@include("../blocks/modules/contacts/contacts.html")
+  </main>
   @@include("../blocks/modules/footer/footer.html")
   <script src="js/main.js"></script>
   <script src="js/vendor.js"></script>
