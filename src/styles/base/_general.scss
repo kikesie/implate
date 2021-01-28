@@ -1,4 +1,55 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.logo {
+  color: $theme-text;
+  font-family: 'Lato';
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+.logo__stylish {
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: $dark-theme-background;
+  color: $theme-text;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1603px;
+  padding: 0 20px;
 }
