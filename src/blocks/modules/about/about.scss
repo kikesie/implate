@@ -1,0 +1,32 @@
+.about {
+  position: relative;
+  padding-top: 295px;
+  padding-bottom: 30px;
+}
+
+.about__container {
+  max-width: 860px;
+}
+
+.about__text {
+  margin-bottom: 112px;
+}
+
+.about__heading {
+  max-width: 530px;
+  margin-bottom: 30px;
+  font-family: 'Lato';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.about__descr {
+  max-width: 660px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.32px;
+  color: rgba(255,255,255,0.3);
+}

@@ -1,6 +1,22 @@
 .preview {
   position: relative;
   height: 600px;
+  padding-top: 166px;
+}
+
+.preview__container {
+  max-width: 1460px;
+}
+
+.preview::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .video {
@@ -12,4 +28,82 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.preview__subtitle {
+  position: relative;
+  z-index: 5;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.68px;
+  display: inline-block;
+}
+
+.preview__heading {
+  position: relative;
+  z-index: 5;
+  margin-top: 10px;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  text-transform: lowercase;
+  color: $theme-text;
+}
+
+.preview__descr {
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+  max-width: 675px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.23px;
+}
+
+.video-controller {
+  position: relative;
+  margin-top: 33px;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.video-controller__btn {
+  width: 14px;
+  height: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.video-controller--play {
+  background-image: url(../img/play.png);
+}
+
+.video-controller--pause {
+  background-image: url(../img/pause.png);
+  display: none;
+}
+
+.video-controller__bar {
+  margin-left: 30px;
+}
+
+.bar {
+  position: relative;
+  width: 300px;
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.bar__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: $theme-text;
 }
