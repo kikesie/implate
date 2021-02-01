@@ -1,7 +1,7 @@
 // video playing
 
-const videoPlay = document.querySelector('.video-contoller--play');
-const videoPause = document.querySelector('.video-contoller--pause');
+const videoPlay = document.querySelector('.video-controller--play');
+const videoPause = document.querySelector('.video-controller--pause');
 const video = document.querySelector('.video');
 const barLine = document.querySelector('.bar__line');
 
@@ -19,7 +19,5 @@ videoPause.addEventListener('click', () => {
 
 video.ontimeupdate = function() {
     let percentage = (video.currentTime / video.duration) * 100;
-    console.log(percentage);
-
     barLine.style.width = percentage + '%';
 };

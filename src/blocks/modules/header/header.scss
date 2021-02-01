@@ -19,7 +19,7 @@
 }
 
 .header__social {
-  margin-left: 327px;
+  margin-left: 200px;
 }
 
 .social__item {
@@ -102,4 +102,29 @@
   right: 0;
   bottom: 0;
   width: 40%;
+}
+
+@media (max-width: 1024px) {
+  .header__social {
+    margin-left: 80px;
+  }
+  .social__link {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 0;
+    background-color: var(--theme-background);
+    z-index: 30;
+  }
+  .header .header__social {
+    display: none;
+  }
 }

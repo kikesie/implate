@@ -54,3 +54,4 @@ function closeMenu() {
 
 burger.addEventListener('click', showMenu);
 close.addEventListener('click', closeMenu);
+

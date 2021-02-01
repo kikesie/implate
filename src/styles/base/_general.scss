@@ -83,3 +83,9 @@ body {
   max-width: 1683px;
   padding: 0 20px;
 }
+
+@media (max-width: 1024px) {
+  .decoration-text {
+    display: none;
+  }
+}

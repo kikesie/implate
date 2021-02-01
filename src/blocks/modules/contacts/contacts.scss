@@ -61,7 +61,23 @@
   transition: opacity 0.7s ease;
 }
 
-.contacts__value:hover a { 
+.contacts__value:hover a {
   opacity: 0.5;
 }
 
+@media (max-width: 1024px) {
+  .contacts__list {
+    flex-wrap: wrap;
+  }
+  .contacts__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

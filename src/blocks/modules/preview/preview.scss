@@ -97,7 +97,7 @@
   position: relative;
   width: 300px;
   height: 1px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bar__line {
@@ -107,4 +107,21 @@
   width: 30%;
   height: 100%;
   background-color: $theme-text;
+}
+
+@media (max-width: 576px) {
+  .bar {
+    width: 200px;
+  }
+  .preview__heading {
+    font-size: 42px;
+  }
+
+  .preview__descr {
+    font-size: 14px;
+  }
+
+  .preview::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
